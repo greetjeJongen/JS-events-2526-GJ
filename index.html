@@ -5,6 +5,38 @@
   <meta charset="utf-8" />
   <title>Events</title>
   <style>
+    button {
+      padding: 10px 20px;
+      margin: 10px 0;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+      /* iets donkerder groen bij hover */
+    }
+
+    #result {
+      padding: 20px;
+      color: #333;
+      border: 1px solid #000;
+      border-radius: 5px;
+      max-width: 400px;
+    }
+
+    #restart {
+      background-color: #f44336;
+      margin-left: 20px;
+    }
+
+    #restart:hover {
+      background-color: #d32f2f;
+    }
+
+
     p {
       color: purple;
       margin: 0.5em 0;
@@ -21,7 +53,25 @@
 </head>
 
 <body>
+  <h1>Oefeningen DOM</h1>
+  <h2>Blad Steen Schaar</h2>
+  <p>Versla jij de browser?
+  </p>
+  <ul>
+    <li>Het blad wint van de steen.</li>
+    <li>De steen wint van de schaar.</li>
+    <li>De schaar wint van het blad.</li>
+    <li>Als jij en de browser hetzelfde voorwerp kiezen, krijg je beide 1 punt.</li>
+  </ul>
 
+  <button id="blad" value="blad">Blad</button>
+  <button id="steen" value="steen">Steen</button>
+  <button id="schaar" value="schaar">Schaar</button>
+  <button id="restart">Speel opnieuw</button>
+  <p id="result">Je moet eerst op een knop duwen</p>
+
+
+  <h2>Cirkel tekenen</h2>
   <canvas width="480" height="320" tabindex="0">
 
   </canvas>
