@@ -1,3 +1,5 @@
+
+// Oefening ...
 // Je krijgt hieronder wat code die een cirkel tekent op een canvas. 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
@@ -19,3 +21,65 @@ const size = 30;
 drawCircle(x, y, size);
 
 // Schrijf hieronder nu code die ervoor zorgt dat de cirkel 10 pixels naar rechts beweegt als je op de rechterpijl drukt, naar links met de linkerpijl, naar boven met de bovenpijl en naar beneden met de onderpijl. Gebruik een eventlistener voor het indrukken van de pijltjestoetsen die de te schrijven functie moveCirkel triggert. 
+
+
+// Oefening
+// Blad - Steen - Schaar
+let spelerGewonnen = 0;
+let browserGewonnen = 0;
+
+let computerKiestBladSteenSchaar = () => {
+
+  const number = Math.floor(Math.random() * 3) + 1;
+  switch (number) {
+    case 1:
+      return "blad";
+    case 2:
+      return "steen";
+    default: return "schaar";
+  }
+}
+
+
+let speelResultaat = (keuze1, keuze2) => (keuze1 === "blad" && keuze2 === "steen")
+  || (keuze1 === "steen" && keuze2 === "schaar")
+  || (keuze1 === "schaar" && keuze2 === "blad");
+
+
+let speelBladSteenSchaar = (waarde => {
+  let computerGuess = computerKiestBladSteenSchaar()
+  console.log(computerGuess);
+  let userWaarde = waarde;
+  let result = "";
+  if (userWaarde === computerGuess) {
+    result = "Gelijkspel";
+    spelerGewonnen++;
+    browserGewonnen++;
+  }
+  else if (speelResultaat(userWaarde, computerGuess)) {
+    result = `Gewonnen. De browser koos voor ${computerGuess}.`;
+    spelerGewonnen++;
+  }
+  else {
+    result = `Verloren. De browser koos voor ${computerGuess}.`;
+    browserGewonnen++;
+  }
+
+  result += ` <br>Tussenstand Speler - Browser: ${spelerGewonnen} - ${browserGewonnen}.`;
+  document.getElementById("result").innerHTML = result;
+})
+
+let restart = () => {
+  spelerGewonnen = 0;
+  browserGewonnen = 0;
+  document.getElementById("result").innerHTML = "Je kan opnieuw beginnen";
+}
+
+let bladButton = document.getElementById("blad").addEventListener("click", () => speelBladSteenSchaar("blad"));
+let steenButton = document.getElementById("steen").addEventListener("click", () => speelBladSteenSchaar("steen"));
+let schaarButton = document.getElementById("schaar").addEventListener("click", () => speelBladSteenSchaar("schaar"));
+document.getElementById("restart").addEventListener("click", restart);
+
+
+
+
