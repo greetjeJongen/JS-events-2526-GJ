@@ -1,4 +1,18 @@
 
+// Toon informatie over het veld waarover je hovert
+const blokken = document.querySelectorAll("div.groot");
+blokken.forEach(blok => {
+  blok.addEventListener("mouseenter", (e) => {
+    const nummer = e.target.innerHTML;
+    const kleur = e.target.style.backgroundColor;
+    document.getElementById("information").innerHTML = `Je zit in blok ${nummer}. Die heeft kleur ${kleur}.`;
+  })
+  blok.addEventListener("mouseleave", (e) => {
+    const nummer = e.target.innerHTML;
+    document.getElementById("information").innerHTML = `Je ging uit blok ${nummer}`;
+  })
+});
+
 // Oefening ...
 // Je krijgt hieronder wat code die een cirkel tekent op een canvas. 
 const canvas = document.querySelector('canvas');
