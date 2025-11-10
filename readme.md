@@ -8,7 +8,7 @@ Maak blokje groter als je erover hovert
 ## 2. Tel aantal karakters in een tekstveld
 
 ## 3. Toon informatie over het veld waarover je hovert
-
+Gegeven zijn een blauw, rood en groen vakje. Zorg ervoor dat, als je over één van de vakjes hovert, volgende tekst verschijnt (ipv "geen informatie beschikbaar"): `Je muis beweegt over vakje 1 en dat heeft kleur blauw.` 
 
 ## 4. Verplaats cirkel
 Je krijgt wat code gegeven die op een HTML canvas een cirkel kan tekenen met een gegeven grootte en op gegeven (x,y) coördinaten in dit canvas.
