@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #444;
+}
+
 button {
     padding: 10px 20px;
     margin: 10px 0;
@@ -29,15 +38,6 @@ button:hover {
     background-color: #d32f2f;
 }
 
-
-p {
-    color: purple;
-    margin: 0.5em 0;
-}
-
-* {
-    box-sizing: border-box;
-}
 
 canvas {
     border: 1px solid black;
