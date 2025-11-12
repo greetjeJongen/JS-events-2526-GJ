@@ -12,7 +12,7 @@ Gebruik hiervoor de css klasse `.contrast` in `stijl.css`.</p>
 
 Als je op de knop "standaard weergave" klikt, wordt de css klasse terug verwijderd.
 
-## 2. Tel aantal karakters in een tekstveld
+## 2. Tel het aantal karakters in een tekstveld
 
 ## 3. Toon informatie over het veld waarover je hovert
 Gegeven zijn een blauw, rood en groen vakje. Zorg ervoor dat, als je over één van de vakjes beweegt met de muis, volgende tekst verschijnt (ipv "geen informatie beschikbaar"): `Je muis beweegt over vakje 1 en dat heeft kleur "blue".` 
