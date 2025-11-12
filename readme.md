@@ -2,8 +2,15 @@
 
 Deze oefening hoort bij het hoofdstuk Events in de JS-cursussite. 
 
-## 1. Vergroot een blokje
-Maak blokje groter als je erover hovert
+## 1. Vergroot het contrast
+  Als je op de knop "Vergroot het contrast" klikt, wordt deze pagina als volgt getoond:
+- de tekst staat in het zwart
+- de font wordt een sans-serif font
+- de font wordt vergroot
+
+Gebruik hiervoor de css klasse `.contrast` in `stijl.css`.</p>
+
+Als je op de knop "standaard weergave" klikt, wordt de css klasse terug verwijderd.
 
 ## 2. Tel aantal karakters in een tekstveld
 
