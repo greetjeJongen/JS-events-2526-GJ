@@ -1,3 +1,11 @@
+// groot contrast
+document.getElementById("contrast").addEventListener("click", () => {
+  document.querySelector("html").classList.add("groot-contrast");
+})
+document.getElementById("standaard").addEventListener("click", () => {
+  document.querySelector("html").classList.remove("groot-contrast");
+})
+
 
 // Toon informatie over het veld waarover je hovert
 const blokken = document.querySelectorAll("div.groot");
