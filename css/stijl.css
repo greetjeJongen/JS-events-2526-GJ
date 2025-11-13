@@ -7,6 +7,20 @@ html {
     color: #444;
 }
 
+div.wrapper {
+    margin-bottom: 3em;
+}
+
+.result {
+    padding: 20px;
+    background-color: rgb(190, 215, 190);
+    border: 1px solid #000;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+/* Contrast */
+
 button {
     padding: 10px 20px;
     margin: 10px 0;
@@ -27,14 +41,29 @@ button:hover {
     font-size: 1.5em;
 }
 
-
-#result {
-    padding: 20px;
-    color: #333;
+/* Toon Informatie */
+div.groot {
     border: 1px solid #000;
-    border-radius: 5px;
-    max-width: 400px;
+    text-align: center;
+    width: 200px;
+    padding: 20px;
 }
+
+/* LetterTeller */
+
+input {
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Cirkel tekenen */
+canvas {
+    border: 1px solid black;
+}
+
+/* Blad Steen Schaar */
 
 #restart {
     background-color: #f44336;
@@ -43,17 +72,4 @@ button:hover {
 
 #restart:hover {
     background-color: #d32f2f;
-}
-
-
-canvas {
-    border: 1px solid black;
-}
-
-
-div.groot {
-    border: 1px solid #000;
-    text-align: center;
-    width: 200px;
-    padding: 20px;
 }

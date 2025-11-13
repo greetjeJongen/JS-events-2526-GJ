@@ -11,32 +11,27 @@
   <h1>Oefeningen Events</h1>
 
   <h2>Vergroot het contrast</h2>
-  <p><button id="contrast">Groot contrast</button> <button id="standaard">Standaard weergave</button></p>
+  <div id="contrast" class="wrapper">
+    <p><button id="contrast">Groot contrast</button> <button id="standaard">Standaard weergave</button></p>
+  </div>
 
   <h2>Toon informatie</h2>
-  <div id="wrapper">
+  <div id="toonInformatie" class="wrapper">
     <div class="groot" style="background-color: blue;">1</div>
     <div class="groot" style="background-color: red;">2</div>
     <div class="groot" style="background-color: green;">3</div>
-    <p id="information">Geen informatie beschikbaar</p>
+    <p class="result">Geen informatie beschikbaar</p>
+  </div>
+
+  <h2>LetterTeller</h2>
+  <div id="letterTeller" class="wrapper">
+    <p> <label for="tekst">Schrijf tekst in onderstaand tekstveld.</label></p>
+    <p><input type="text" id="tekst" size="100" placeholder="Schrijf hier je tekst."></p>
+    <p class="result">Even geduld. We tellen uw letters ...</p>
+
   </div>
 
 
-  <h2>Blad Steen Schaar</h2>
-  <p>Versla jij de browser?
-  </p>
-  <ul>
-    <li>Het blad wint van de steen.</li>
-    <li>De steen wint van de schaar.</li>
-    <li>De schaar wint van het blad.</li>
-    <li>Als jij en de browser hetzelfde voorwerp kiezen, krijg je beide 1 punt.</li>
-  </ul>
-
-  <button id="blad" value="blad">Blad</button>
-  <button id="steen" value="steen">Steen</button>
-  <button id="schaar" value="schaar">Schaar</button>
-  <button id="restart">Speel opnieuw</button>
-  <p id="result">Je moet eerst op een knop duwen</p>
 
 
   <h2>Cirkel tekenen</h2>
@@ -45,6 +40,25 @@
   </canvas>
 
   <script src="student.js"></script>
+
+
+  <h2>Blad Steen Schaar</h2>
+  <div id="bladSteenSchaar" class="wrapper">
+    <p>Versla jij de browser?
+    </p>
+    <ul>
+      <li>Het blad wint van de steen.</li>
+      <li>De steen wint van de schaar.</li>
+      <li>De schaar wint van het blad.</li>
+      <li>Als jij en de browser hetzelfde voorwerp kiezen, krijg je beide 1 punt.</li>
+    </ul>
+
+    <button id="blad" value="blad">Blad</button>
+    <button id="steen" value="steen">Steen</button>
+    <button id="schaar" value="schaar">Schaar</button>
+    <button id="restart">Speel opnieuw</button>
+    <p class="result">Start het spel door op een knop te duwen.</p>
+  </div>
 </body>
 
 </html>
