@@ -2,6 +2,8 @@
 
 Deze oefening hoort bij het hoofdstuk Events in de JS-cursussite. 
 
+Schrijf je oplossingen in het bestand student.js. Let op: dit bestand is nog niet gelinkt aan `index.html`. Dat moet je zelf in orde brengen. 
+
 ## 1. Vergroot het contrast
   Als je op de knop "Vergroot het contrast" klikt, wordt deze pagina als volgt getoond:
 - de tekst staat in het zwart
@@ -13,7 +15,9 @@ Gebruik hiervoor de css klasse `.contrast` in `stijl.css`.</p>
 Als je op de knop "standaard weergave" klikt, wordt de css klasse terug verwijderd.
 
 ## 2. LetterTeller
-Toon het aantal karakters dat getypt zijn in het tekstveld. Het aantal wordt aangepast terwijl de gebruiker typt. Gebruik een `input` event.
+Toon het aantal karakters dat getypt zijn in het tekstveld. Het aantal wordt aangepast terwijl de gebruiker typt. 
+- Gebruik een `input` event.
+- Op [Javascript.info](https://javascript.info/form-elements#input-and-textarea) vind je hoe je de tekst die de gebruiker typt kan aanspreken in JS.
 
 
 ## 3. Toon informatie over het veld waarover je hovert
