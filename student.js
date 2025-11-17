@@ -21,6 +21,16 @@ blokken.forEach(blok => {
   })
 });
 
+// LetterTeller
+const inputfield = document.getElementById("tekst");
+const telLetters = () => {
+  const lengte = inputfield.value.length;
+  document.querySelector("#letterTeller .result").innerHTML = lengte;
+}
+
+inputfield.addEventListener("input", telLetters);
+
+
 // Oefening ...
 // Je krijgt hieronder wat code die een cirkel tekent op een canvas. 
 const canvas = document.querySelector('canvas');
