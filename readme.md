@@ -33,3 +33,8 @@ Maak een eventlistener die luistert naar het indrukken van de vier pijltjestoets
 ## 5. Blad Steen Schaar
 Schrijf JS code zodat je het spel blad-steen-schaar kan spelen tegen de browser. Je krijgt alvast HTML met knoppen en een beetje CSS. 
 Bekijk [het filmpje](blad-steen-schaar.mp4) met een mogelijk eindresultaat. 
+
+## 6. Hoger Lager
+Maak het mogelijk om het spel "Hoger Lager" te spelen. Bepaal zelf de spelregels, bijvoorbeeld
+- de computer kiest een random getal tussen 0 en 20 en de gebruiker moet het getal raden. De computer geeft de tips "hoger" en "lager".
+- de computer trekt een random speelkaart. De gebruiker moet raden of de volgende kaart die de computer zal trekken hoger of lager zal zijn dan de vorige. Je kan ASCII code gebruiken om de kleur van een kaart voor te stellen.
