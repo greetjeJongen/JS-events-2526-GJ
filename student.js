@@ -54,6 +54,30 @@ drawCircle(x, y, size);
 
 // Schrijf hieronder nu code die ervoor zorgt dat de cirkel 10 pixels naar rechts beweegt als je op de rechterpijl drukt, naar links met de linkerpijl, naar boven met de bovenpijl en naar beneden met de onderpijl. Gebruik een eventlistener voor het indrukken van de pijltjestoetsen die de te schrijven functie moveCirkel triggert. 
 
+document.body.addEventListener("keydown", moveCircle);
+
+function moveCircle(event) {
+  const value = 5;
+  const key = event.key;
+  event.preventDefault();
+  switch (key) {
+    case "ArrowDown":
+      y += value;
+      break;
+    case "ArrowUp":
+      y -= value;
+      break;
+    case "ArrowLeft":
+      x -= value;
+      break;
+    case "ArrowRight":
+      x += value;
+      break;
+    default:
+      break;
+  }
+  drawCircle(x, y, size);
+}
 
 // Oefening
 // Blad - Steen - Schaar
